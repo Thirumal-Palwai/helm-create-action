@@ -1,0 +1,20 @@
+name: "helm create command"
+description: "execute"
+branding:
+  color: green
+  icon: shield
+
+inputs:
+  kubefile:
+    description: "input file"
+    required: true
+  command:
+    description: "execute command"
+    required: true
+
+runs:
+  using: docker
+  image: Dockerfile
+  args:
+    - ${{ inputs.kubefile }}
+    - ${{ inputs.command }}
