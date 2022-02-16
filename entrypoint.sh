@@ -2,7 +2,6 @@
 set -e
 set -x
 
-kubeconfig=$1
-command=$2
+parameters=$1
 
-helm --kubeconfig $kubeconfig $command
+helm create $parameters
