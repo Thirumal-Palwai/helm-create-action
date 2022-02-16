@@ -5,16 +5,12 @@ branding:
   icon: shield
 
 inputs:
-  kubefile:
-    description: "input file"
-    required: true
-  command:
-    description: "execute command"
+  parameters:
+    description: "other parameters in helm create command"
     required: true
 
 runs:
   using: docker
   image: Dockerfile
   args:
-    - ${{ inputs.kubefile }}
-    - ${{ inputs.command }}
+    - ${{ inputs.parameters }}
