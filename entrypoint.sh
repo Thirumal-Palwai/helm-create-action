@@ -12,6 +12,7 @@ fi
 
 helm create $Path/$ChartName
 
+pwd
 ls -larth
 cd /test/charts
 ls -larth
