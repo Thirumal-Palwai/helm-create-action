@@ -17,4 +17,4 @@ runs:
   image: Dockerfile
   args:
     - ${{ inputs.ChartName }}
-    - ${{ inputs.Path }}}
+    - ${{ inputs.Path }}
