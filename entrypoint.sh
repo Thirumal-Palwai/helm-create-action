@@ -2,6 +2,11 @@
 set -e
 set -x
 
-parameters=$1
+ChartName=$1
+Path=$2
 
-helm create $parameters
+if [ -z "$Path" ]
+mkdir -p $Path
+fi
+
+helm create $Path/$ChartName

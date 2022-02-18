@@ -1,16 +1,20 @@
-name: "helm create command"
-description: "execute"
+name: "helm chart create"
+description: "This action create an example helm chart"
 branding:
   color: green
   icon: shield
 
 inputs:
-  parameters:
-    description: "other parameters in helm create command"
+  ChartName:
+    description: "Name of the helm chart"
     required: true
+  Path:
+    description: "Path in which helm chart is created"
+    required: false
 
 runs:
   using: docker
   image: Dockerfile
   args:
-    - ${{ inputs.parameters }}
+    - ${{ inputs.ChartName }}
+    - ${{ inputs.Path }}}
