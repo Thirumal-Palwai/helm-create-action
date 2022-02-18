@@ -32,5 +32,5 @@ jobs:
       uses: philips-internal/helm-create-action@v1.0.0
       with:
         ChartName: "foo"
-        Path: "/test/charts"
+        Path: "test/charts"
 ```
