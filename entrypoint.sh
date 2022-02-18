@@ -10,3 +10,7 @@ mkdir -p $Path
 fi
 
 helm create $Path/$ChartName
+
+ls -larth
+cd /test/charts
+ls -larth
