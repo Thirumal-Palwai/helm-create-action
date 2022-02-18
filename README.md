@@ -29,7 +29,7 @@ jobs:
     - name: checkout
       uses: actions/checkout@master
     - name: "create helm chart"
-      uses: philips-internal/helm-create-action@v1.0.0
+      uses: Thirumal-Palwai/helm-create-action@v1.0.0
       with:
         ChartName: "foo"
         Path: "test/charts"
